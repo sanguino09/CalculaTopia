@@ -20,10 +20,11 @@ body {
 }
 .calculator {
   margin-top: 5vh;
-  width: 90%;
+  width: 80%;
   display: flex;
   flex-direction: column;
   border-radius: 20px;
+  justify-content: center;
 }
 #resultScreen {
   text-align: right;
@@ -222,4 +223,51 @@ body {
     height: calc(100vh - 50px);
     overflow-y: auto;
   }
+}
+/*-----------Differences in calcTip-------------*/
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+table,
+th,
+td {
+  text-align: center;
+  border: 3px solid;
+  border-color: aliceblue;
+  border-collapse: collapse;
+  padding: 10px;
+}
+td {
+  margin: 50px;
+}
+#calculateTip {
+  background-color: aliceblue;
+  border-radius: 10px;
+  width: 100px;
+  height: 50px;
+}
+#calculateTipNew {
+  background-color: aliceblue;
+  border-radius: 10px;
+  width: 100px;
+  height: 50px;
+}
+button {
+  font-family: "Lucida Console", "Courier New", monospace;
+  box-shadow: 5px 6px 5px 0px rgba(0, 0, 0, 0.75);
+}
+.calculatorTip {
+  margin-top: 10vh;
+}
+#percentageInput {
+  text-align: right;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-right: 20px;
+  border-radius: 20px;
+  background-color: aliceblue;
+  color: #181818;
+  box-shadow: inset 0 0 5px #181818;
 }

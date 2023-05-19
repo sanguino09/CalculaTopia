@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" type="image/x-icon" href="./icoCal.ico" />
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <title>CalculatorWorld</title>
+  </head>
+  <body>
+    <div class="nav">
+      <input type="checkbox" id="nav-check" />
+      <div class="nav-header">
+        <div class="nav-title">Calculator World</div>
+      </div>
+      <div class="nav-btn">
+        <label for="nav-check">
+          <span></span>
+          <span></span>
+          <span></span>
+        </label>
+      </div>
+
+      <div class="nav-links">
+        <a href="./index.html" target="_blank">Home</a>
+        <a href="./calcNormal.html" target="_blank">Normal</a>
+        <a href="./calcTip.html" target="_blank">Tips</a>
+        <a href="#" target="_blank">Calc 3</a>
+        <a href="#" target="_blank">Calc 4</a>
+      </div>
+    </div>
+    <div class="calculatorDiv">
+      <div class="calculatorTip">
+        <div class="title">Tip Calculator</div>
+        <input
+          type="number"
+          id="resultScreen"
+          placeholder="Enter your receipt cost $$"
+          onblur="getVal()"
+          style="text-align: center"
+        />
+        <button onclick="calculateTip()" id="calculateTip">Calculate</button>
+        <br />
+        <br />
+        <table id="tipResults" hidden>
+          <br />
+          <tr>
+            <th>Percentage</th>
+            <th>Tip</th>
+            <th>Total</th>
+          </tr>
+          <tr>
+            <td>5%</td>
+            <td id="5%">0</td>
+            <td id="5%T">0</td>
+          </tr>
+          <tr>
+            <td>10%</td>
+            <td id="10%">0</td>
+            <td id="10%T">0</td>
+          </tr>
+          <tr>
+            <td>15%</td>
+            <td id="15%">0</td>
+            <td id="15%T">0</td>
+          </tr>
+          <tr>
+            <td>20%</td>
+            <td id="20%">0</td>
+            <td id="20%T">0</td>
+          </tr>
+          <tr>
+            <td>25%</td>
+            <td id="25%">0</td>
+            <td id="25%T">0</td>
+          </tr>
+          <tr>
+            <td>50%</td>
+            <td id="50%">0</td>
+            <td id="50%T">0</td>
+          </tr>
+        </table>
+        <table id="tipNewResults" hidden>
+          <br />
+          <tr>
+            <th>Percentage</th>
+            <th>Tip</th>
+            <th>Total</th>
+          </tr>
+          <tr>
+            <td id="%"></td>
+            <td id="new%"></td>
+            <td id="new%T"></td>
+          </tr>
+        </table>
+        <br />
+        <br />
+        <input
+          hidden
+          type="number"
+          id="percentageInput"
+          placeholder="Different percentage? %"
+          onblur="getNewVal()"
+          style="text-align: center"
+        />
+        <button hidden onclick="calculateNewTip()" id="calculateTipNew">
+          Calculate
+        </button>
+      </div>
+    </div>
+    <script src="calcTip.js"></script>
+  </body>
+</html>
