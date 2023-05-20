@@ -32,10 +32,8 @@ function calculateTip() {
   document.getElementById("25%").innerHTML = twentyfivePercent;
   document.getElementById("50%").innerHTML = fiftyPercent;
   /*Total*/
-  document.getElementById("5%T").innerHTML = 
-    parseInt(inputValue) + fivePercent;
-  document.getElementById("10%T").innerHTML = 
-    parseInt(inputValue) + tenPercent;
+  document.getElementById("5%T").innerHTML = parseInt(inputValue) + fivePercent;
+  document.getElementById("10%T").innerHTML = parseInt(inputValue) + tenPercent;
   document.getElementById("15%T").innerHTML =
     parseInt(inputValue) + fifteenPercent;
   document.getElementById("20%T").innerHTML =
@@ -70,3 +68,4 @@ function calculateNewTip() {
   tipResults.hidden = true;
   tipNewResults.hidden = false;
 }
+

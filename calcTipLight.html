@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en" style="filter: invert(100%)">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="shortcut icon" type="image/x-icon" href="./icoCal.ico" />
     <link rel="stylesheet" type="text/css" href="styles.css" />
-    <title>Calculatopia | Calculadora de propinas</title>
+    <title>Calculatopia | Tip Calculator</title>
   </head>
   <body>
     <div class="nav">
@@ -23,15 +23,15 @@
       </div>
 
       <div class="nav-links">
-        <a href="./index.html">Inicio</a>
+        <a href="./index.html">Home</a>
         <a href="./calcNormal.html">Normal</a>
-        <a href="./calcTip.html">Propina</a>
+        <a href="./calcTip.html">Tips</a>
         <a href="#">
           <div class="dropdown colorMode">
-            <button class="dropbtn">Tema</button>
+            <button class="dropbtn">Theme</button>
             <div class="dropdown-content">
-              <a href="./calcTipSpanish.html">Oscuro</a>
-              <a href="./calcTipLightSpanish.html">Claro</a>
+              <a href="./calcTip.html">Dark</a>
+              <a href="./calcTipLight.html">Light</a>
             </div>
           </div></a
         >
@@ -39,22 +39,22 @@
     </div>
     <div class="calculatorDiv">
       <div class="calculatorTip">
-        <div class="title">Calculadora de Propinas</div>
+        <div class="title">Tip Calculator</div>
         <input
           type="number"
           id="resultScreen"
-          placeholder="¿Precio de la cuenta? €€"
+          placeholder="Enter your receipt cost $$"
           onblur="getVal()"
           style="text-align: center"
         />
-        <button onclick="calculateTip()" id="calculateTip">Calcular</button>
+        <button onclick="calculateTip()" id="calculateTip">Calculate</button>
         <br />
         <br />
         <table id="tipResults" hidden>
           <br />
           <tr>
-            <th>Porcentaje</th>
-            <th>Propina</th>
+            <th>Percentage</th>
+            <th>Tip</th>
             <th>Total</th>
           </tr>
           <tr>
@@ -91,8 +91,8 @@
         <table id="tipNewResults" hidden>
           <br />
           <tr>
-            <th>Porcentaje</th>
-            <th>Propina</th>
+            <th>Percentage</th>
+            <th>Tip</th>
             <th>Total</th>
           </tr>
           <tr>
@@ -107,12 +107,12 @@
           hidden
           type="number"
           id="percentageInput"
-          placeholder="¿Porcentaje diferente? %"
+          placeholder="Different percentage? %"
           onblur="getNewVal()"
           style="text-align: center"
         />
         <button hidden onclick="calculateNewTip()" id="calculateTipNew">
-          Calcular
+          Calculate
         </button>
       </div>
     </div>

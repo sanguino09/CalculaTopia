@@ -26,8 +26,3 @@ buttons.map((button) => {
   });
 });
 
-/*
-mystery.addEventListener("click", (e) => {
-
-});
-*/
